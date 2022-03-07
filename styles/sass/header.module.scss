@@ -1,0 +1,98 @@
+@import "./variable.scss";
+
+.header {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  padding: 10px;
+  @include mq() {
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  &__name {
+    width: 100%;
+    @include mq() {
+      display: flex;
+    }
+    &__link {
+      display: block;
+      width: 40%;
+      @include mq() {
+        width: 20%;
+        margin: 20px;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    margin: 22px 0;
+    height: 21px;
+
+    @include mq() {
+      display: flex;
+    }
+
+    &__link {
+      display: block;
+      height: 21px;
+    }
+    &__label {
+      &_work {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        margin: 0 20px;
+      }
+      &_about {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        margin: 0 20px;
+      }
+      &_contact {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        margin: 0 20px;
+      }
+      &_insta {
+        height: 20px;
+        width: 20px;
+        margin: 0 20px;
+      }
+    }
+  }
+
+  &__hamburger_button {
+    position: absolute;
+    left: 20px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    @include mq() {
+      display: none;
+    }
+    &_close {
+      @extend .header__hamburger_button;
+      & div:first-child {
+        transform: rotate(45deg);
+        margin: -1.5px 0;
+      }
+      & div:last-child {
+        transform: rotate(-45deg);
+        margin: -1.5px 0;
+      }
+    }
+    &_line {
+      width: 18px;
+      height: 1px;
+      background-color: black;
+      margin: 5px 0;
+    }
+  }
+}

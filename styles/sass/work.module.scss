@@ -1,0 +1,58 @@
+@import "./variable.scss";
+
+.work {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @include mq() {
+    padding-top: 120px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    @include mq() {
+      width: 60%;
+    }
+    & img,
+    video {
+      width: 100%;
+    }
+
+    &__title {
+      font-family: "Hind", sans-serif;
+      margin-top: 10px;
+      font-size: 21px;
+      line-height: 30px;
+      @include mq() {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+    &__subtitle {
+      font-family: "Lato", sans-serif;
+      margin-bottom: 20px;
+      font-weight: 100;
+      font-size: 12px;
+      line-height: 14px;
+      @include mq() {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+
+    &__description {
+      font-family: "Lato", sans-serif;
+      margin: 10px 20px;
+      text-align: start;
+      font-size: 14px;
+      @include mq() {
+        font-size: 16px;
+      }
+    }
+  }
+}

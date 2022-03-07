@@ -1,0 +1,37 @@
+@import "./variable.scss";
+
+.about {
+  display: flex;
+  justify-content: center;
+  &__content {
+    padding-top: 60px;
+    width: 80%;
+    @include mq() {
+      width: 60%;
+      padding-top: 120px;
+    }
+    &__name {
+      font-size: 24px;
+      @include mq() {
+        font-size: 24px;
+      }
+    }
+    &__introduction {
+      font-size: 14px;
+      margin-bottom: 30px;
+      font-family: "游ゴシック体", YuGothic, "Yu Gothic", Meiryo, sans-serif;
+
+      @include mq() {
+        font-size: 16px;
+        margin-bottom: 60px;
+      }
+      &__eng {
+        @extend .about__content__introduction;
+        font-size: 16px;
+        @include mq() {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

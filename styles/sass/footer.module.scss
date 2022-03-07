@@ -1,0 +1,30 @@
+@import "./variable.scss";
+.footer {
+  width: 100%;
+  height: 0;
+  @include mq() {
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+  }
+  &__message {
+    display: none;
+    @include mq() {
+      display: inline;
+      font-size: 18px;
+      font-weight: 200;
+      font-family: "Lato", sans-serif;
+    }
+  }
+  &__back {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    opacity: 80%;
+    @include mq() {
+      display: none;
+    }
+  }
+}
