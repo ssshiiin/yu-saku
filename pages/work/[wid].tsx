@@ -19,8 +19,7 @@ const Work: NextPage = () => {
     if (!text || text === "") {
       return "";
     } else {
-      console.log(text);
-      return text.replace(/\r?\n/g, "<br/>");
+      return text.replace(/\\n/g, "\n");
     }
   };
 

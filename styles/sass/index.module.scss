@@ -25,8 +25,11 @@
       }
 
       &__text {
-        visibility: hidden;
-        height: 0;
+        display: none;
+        @include mq() {
+          display: block;
+          visibility: hidden;
+        }
         &__title {
           display: block;
           text-align: center;
@@ -52,7 +55,6 @@
       & img,
       video {
         width: 100%;
-        height: auto;
         @include mq() {
           &:hover {
             opacity: 0.7;
