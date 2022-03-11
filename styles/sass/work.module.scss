@@ -28,6 +28,7 @@
       line-height: 30px;
       @include mq() {
         margin-top: 20px;
+        margin-bottom: 5px;
         font-size: 30px;
         line-height: 30px;
       }
@@ -47,7 +48,7 @@
 
     &__description {
       font-family: "Lato", sans-serif;
-      margin: 10px 20px;
+      margin: 10px 20px 20px 20px;
       text-align: start;
       font-size: 14px;
       white-space: pre-line;

@@ -6,10 +6,10 @@ import styles from "/styles/sass/footer.module.scss";
 const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
-      <Link href="/">
+      <Link href="#">
         <a className={styles.footer__message}>&#8593; Back to Top</a>
       </Link>
-      <Link href="/">
+      <Link href="#">
         <a>
           <img
             src={"/images/backToTop.png"}

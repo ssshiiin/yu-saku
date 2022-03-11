@@ -20,10 +20,10 @@ const Header = (props: Props) => {
     <header className={styles.header}>
       <Link href="/">
         <a className={styles.header__name__link}>
-          <object
+          <img
+            alt={""}
+            src={"/images/nameLogo.png"}
             className={styles.header__name}
-            type="image/svg+xml"
-            data="/images/NameLogo.svg"
           />
         </a>
       </Link>
