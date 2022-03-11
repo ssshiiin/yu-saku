@@ -7,7 +7,7 @@ const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
       <Link href="#">
-        <a className={styles.footer__message}>&#8593; Back to Top</a>
+        <a className={styles.footer__message}>BACK TO TOP</a>
       </Link>
       <Link href="#">
         <a>

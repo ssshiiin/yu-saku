@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="icon" href="/images/a.ico" />
           <link
             href="https://fonts.googleapis.com/css2?family=Hind&family=Lato:wght@300&display=block"
             rel="stylesheet"

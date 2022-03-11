@@ -1,10 +1,16 @@
-export type work = {
+export type head = {
   id: string;
-  type: work_type;
   title: string;
   sub_title: string;
   description: string;
+  type: work_type;
   head_path: string;
+  works: work[];
+};
+
+export type work = {
+  id: string;
+  type: work_type;
   work_path: string;
 };
 
