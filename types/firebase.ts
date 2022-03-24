@@ -5,6 +5,7 @@ export type head = {
   description: string;
   type: work_type;
   head_path: string;
+  work_path: string;
   works: work[];
 };
 
