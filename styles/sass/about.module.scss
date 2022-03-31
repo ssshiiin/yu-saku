@@ -3,6 +3,12 @@
 .about {
   display: flex;
   justify-content: center;
+  &__head {
+    font-size: 24px;
+    font-family: "Hind", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+  }
   &__content {
     padding-top: 60px;
     width: 80%;
@@ -20,18 +26,39 @@
       font-size: 14px;
       margin-bottom: 30px;
       font-family: "游ゴシック体", YuGothic, "Yu Gothic", Meiryo, sans-serif;
-
       @include mq() {
-        font-size: 16px;
+        width: 46%;
+        font-size: 14px;
         margin-bottom: 60px;
+      }
+      &__wrapper {
+        @include mq() {
+          display: flex;
+          justify-content: space-between;
+        }
       }
       &__eng {
         @extend .about__content__introduction;
-        font-size: 16px;
-        @include mq() {
-          font-size: 18px;
-        }
+        line-height: 1.9em;
+      }
+      &__jp {
+        @extend .about__content__introduction;
+        letter-spacing: 1.5px;
+        line-height: 2em;
       }
     }
+  }
+}
+
+.line {
+  width: 1px;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+.spacer {
+  @include mq() {
+    width: 30px;
+    height: 30px;
   }
 }

@@ -11,7 +11,6 @@
   padding: 10px;
   @include mq() {
     justify-content: space-between;
-    background-color: white;
   }
 
   &__name {

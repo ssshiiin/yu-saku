@@ -27,9 +27,10 @@
       margin-top: 10px;
       font-size: 21px;
       line-height: 30px;
+      letter-spacing: 1px;
       @include mq() {
         margin-top: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         font-size: 30px;
         line-height: 30px;
       }
@@ -48,11 +49,13 @@
     }
 
     &__description {
-      font-family: "Lato", sans-serif;
+      font-family: "游ゴシック体", YuGothic, "Yu Gothic", Meiryo, sans-serif;
       margin: 20px 20px 40px 20px;
       text-align: start;
       font-size: 14px;
       white-space: pre-line;
+      letter-spacing: 1.5px;
+      line-height: 2em;
       @include mq() {
         font-size: 16px;
       }
